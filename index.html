@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h1>Project Tracker</h1>
+
+  <div id="table-container">
+    <label for="name">Search by Name:</label>
+    <input id="search-input" type="text" id="name" placeholder="Enter name">
+
+    <label for="designation">Filter by Designation:</label>
+    <select id="designation">
+      <option value="">All</option>
+      <option value="Developer">Developer</option>
+      <option value="Designer">Designer</option>
+      <option value="Tester">Tester</option>
+    </select>
+  </div>
+
+  <table id="projectsTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Team Size</th>
+        <th>Completed Tasks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Table rows will be dynamically generated here -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
